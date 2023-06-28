@@ -7,9 +7,11 @@ import {
   DescribeVpcAttributeCommand,
   DescribeSubnetsCommand,
   StartInstancesCommand,
+  Described,
 } from '@aws-sdk/client-ec2';
 import { IAMClient, ListRolesCommand, GetAccountSummaryCommand, ListMFADevicesCommand, ListAccessKeysCommand } from '@aws-sdk/client-iam';
 import { ConfigServiceClient, DescribeComplianceByConfigRuleCommand } from '@aws-sdk/client-config-service';
+import { LambdaClient, AddLayerVersionPermissionCommand } from '@aws-sdk/client-lambda';
 
 // AWS SDK 클라이언트를 생성합니다.
 const stsClient = new STSClient();
@@ -42,7 +44,11 @@ async function getRegions() {
   });
   const response = await ec2Client.send(command);
 
-  console.log(response.StartingInstances);
+  if (response.StartingInstances[0].PreviousState.Name === 'running') {
+    return true;
+  } else {
+    return false;
+  }
   // let info = [];
   // const data = response.Subnets.filter((data) => {
   //   return (
