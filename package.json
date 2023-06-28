@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1390.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-config-service": "^3.350.0",
+    "@aws-sdk/client-ec2": "^3.345.0",
+    "@aws-sdk/client-iam": "^3.345.0",
+    "@aws-sdk/client-sts": "^3.345.0"
+  }
+}
