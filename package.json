@@ -12,10 +12,13 @@
   "dependencies": {
     "@aws-sdk/client-lambda": "^3.360.0",
     "aws-sdk": "^2.1390.0",
+    "config": "^3.3.9",
+    "dotenv": "^16.3.1",
+    "js-yaml": "^4.1.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@aws-sdk/client-config-service": "^3.350.0",
+    "@aws-sdk/client-config-service": "^3.362.0",
     "@aws-sdk/client-ec2": "^3.345.0",
     "@aws-sdk/client-iam": "^3.345.0",
     "@aws-sdk/client-sts": "^3.345.0"
