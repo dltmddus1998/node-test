@@ -1,0 +1,113 @@
+Parameters:
+  IamPasswordPolicyParamMinimumPasswordLength:
+    Default: '14'
+    Type: String
+  AccessKeysRotatedParamMaxAccessKeyAge:
+    Default: '90'
+    Type: String
+  IamUserUnusedCredentialsCheckParamMaxCredentialUsageAge:
+    Default: '45'
+    Type: String
+  Ec2InstanceWideOpenSecurityGroupParamTest:
+    Default: '11'
+    Type: String
+Resources:
+  IamPasswordPolicy:
+    Properties:
+      ConfigRuleName: iam-password-policy
+      InputParameters:
+        MinimumPasswordLength: IamPasswordPolicyParamMinimumPasswordLength
+      Source:
+        Owner: AWS
+        SourceIdentifier: IAM_PASSWORD_POLICY
+    Type: AWS::Config::ConfigRule
+  AccessKeysRotated:
+    Properties:
+      ConfigRuleName: access-keys-rotated
+      InputParameters:
+        maxAccessKeyAge: AccessKeysRotatedParamMaxAccessKeyAge
+      Source:
+        Owner: AWS
+        SourceIdentifier: ACCESS_KEYS_ROTATED
+    Type: AWS::Config::ConfigRule
+  IamUserUnusedCredentialsCheck:
+    Properties:
+      ConfigRuleName: iam-user-unused-credentials-check
+      InputParameters:
+        maxCredentialUsageAge: IamUserUnusedCredentialsCheckParamMaxCredentialUsageAge
+      Source:
+        Owner: AWS
+        SourceIdentifier: IAM_USER_UNUSED_CREDENTIALS_CHECK
+    Type: AWS::Config::ConfigRule
+  InstanceWideOpen:
+    Type: AWS::Config::ConfigRule
+    Properties:
+      ConfigRuleName: 'ec2-instance-security-group-wide-open'
+      Scope:
+        ComplianceResourceTypes:
+          - 'AWS::EC2::Instance'
+      Source:
+        Owner: 'CUSTOM_LAMBDA'
+        SourceDetails:
+          - EventSource: 'aws.config'
+            MessageType: 'ConfigurationItemChangeNotification'
+          - EventSource: 'aws.config'
+            MessageType: 'OversizedConfigurationItemChangeNotification'
+        SourceIdentifier: 'arn:aws:lambda:ap-northeast-2:345619873383:function:sg-wide-open'
+  # SecurityGroupNotUsed:
+  #     Type: AWS::Config::ConfigRule
+  #     Properties:
+  #       ConfigRuleName: "a-hakjoo-test-sg-not-used"
+  #       Scope:
+  #         ComplianceResourceTypes:
+  #           - "AWS::EC2::Instance"
+  #       Source:
+  #         Owner: "CUSTOM_POLICY"
+  #         SourceDetails:
+  #           -
+  #             EventSource: "aws.config"
+  #             MessageType: "ConfigurationItemChangeNotification"
+  #           -
+  #             EventSource: "aws.config"
+  #             MessageType: "OversizedConfigurationItemChangeNotification"
+  #         CustomPolicyDetails:
+  #             PolicyRuntime: "guard-2.x.x"
+  #             PolicyText: "rule sg_not_used_compliance { when resourceType == 'AWS::EC2::Instance' { configuration.networkInterfaces != null } }"
+  # CloudformationStacksTerminationProtection:
+  #     Type: AWS::Config::ConfigRule
+  #     Properties:
+  #         ConfigRuleName: "using_guard_cloudformation_stacks_termination_protection_enabled"
+  #         Scope:
+  #             ComplianceResourceTypes:
+  #               - "AWS::CloudFormation::Stack"
+  #         Source:
+  #             Owner: "CUSTOM_POLICY"
+  #             SourceDetails:
+  #               -
+  #                 EventSource: "aws.config"
+  #                 MessageType: "ConfigurationItemChangeNotification"
+  #               -
+  #                 EventSource: "aws.config"
+  #                 MessageType: "OversizedConfigurationItemChangeNotification"                  -
+  #             CustomPolicyDetails:
+  #                 PolicyRuntime: "guard-2.x.x"
+  #                 PolicyText: "rule cloudformation_stacks_termination_protection_enabled { when resourceType == 'AWS::CloudFormation::Stack' { configuration.enableTerminationProtection } }"
+  # SecurityGoupdIngressFromInternet:
+  #     Type: AWS::Config::ConfigRule
+  #     Properties
+  #         ConfigRuleName: "using_guard_cloudformation_stacks_termination_protection_enabled"
+  #         Scope:
+  #             ComplianceResourceTypes:
+  #               - "AWS::CloudFormation::Stack"
+  #         Source:
+  #             Owner: "CUSTOM_POLICY"
+  #             SourceDetails:
+  #               -
+  #                 EventSource: "aws.config"
+  #                 MessageType: "ConfigurationItemChangeNotification"
+  #               -
+  #                 EventSource: "aws.config"
+  #                 MessageType: "OversizedConfigurationItemChangeNotification"                  -
+  #             CustomPolicyDetails:
+  #                 PolicyRuntime: "guard-2.x.x"
+  #                 PolicyText: "rule cloudformation_stacks_termination_protection_enabled { when resourceType == 'AWS::CloudFormation::Stack' { configuration.enableTerminationProtection } }"
