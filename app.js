@@ -10,8 +10,11 @@ import {
 import { count } from 'console';
 import { readFileSync } from 'fs';
 import { join, resolve } from 'path';
+import { AssumeRoleCommand, GetCallerIdentityCommand, GetSessionTokenCommand, STSClient } from '@aws-sdk/client-sts';
 import dotenv from 'dotenv';
 dotenv.config();
+
+const stsClient = new STSClient({});
 
 const client = new ConfigServiceClient({
   region: 'ap-northeast-2',
@@ -173,12 +176,11 @@ const listConformancePackComplianceScores = async () => {
   const response = await client.send(command);
   console.log(...response.ConformancePackComplianceScores);
 };
-
 async function runFunctions() {
   // await createConformancePack();
   // await getDetail();
   // await describeConformance();
-  await getNonCompliantResourceIds();
+  // await getNonCompliantResourceIds();
   // await getConformancePackComplianceDetails();
   // await listConformancePackComplianceScores();
 }
