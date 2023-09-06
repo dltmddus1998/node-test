@@ -1,0 +1,992 @@
+[
+  {
+    "securityTerm": "Availability",
+    "parent": "Business Continuity",
+    "category": "Incident response",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Confidentiality",
+    "parent": "Business Continuity",
+    "category": "Data protection",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Integrity",
+    "parent": "Business Continuity",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "High Availability,HA",
+    "parent": "Availability",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Disaster Recovery,DR",
+    "parent": "Availability",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Backup",
+    "parent": "Availability",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "backup",
+      "subServiceCodes": [
+        "backup-backupplan",
+        "backup-backupselection",
+        "backup-backupvault",
+        "backup-recoverypoint",
+        "backup-reportplan"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Instance Backup",
+    "parent": "Backup",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "backup",
+      "subServiceCodes": [
+        "backup-backupplan",
+        "backup-backupselection",
+        "backup-backupvault",
+        "backup-recoverypoint",
+        "backup-reportplan"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Database Backup",
+    "parent": "Backup",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "backup",
+      "subServiceCodes": [
+        "backup-backupplan",
+        "backup-backupselection",
+        "backup-backupvault",
+        "backup-recoverypoint",
+        "backup-reportplan"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Storage Backup",
+    "parent": "Backup",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "backup",
+      "subServiceCodes": [
+        "backup-backupplan",
+        "backup-backupselection",
+        "backup-backupvault",
+        "backup-recoverypoint",
+        "backup-reportplan"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Network Backup",
+    "parent": "Backup",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "backup",
+      "subServiceCodes": [
+        "backup-backupplan",
+        "backup-backupselection",
+        "backup-backupvault",
+        "backup-recoverypoint",
+        "backup-reportplan"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Database Encryption",
+    "parent": "Encryption",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "rds",
+      "subServiceCodes": [
+        "rds-dbcluster",
+        "rds-dbclustersnapshot",
+        "rds-dbinstance",
+        "rds-dbsecuritygroup",
+        "rds-dbsnapshot",
+        "rds-dbsubnetgroup",
+        "rds-eventsubscription",
+        "rds-globalcluster"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Storage Encryption",
+    "parent": "Encryption",
+    "category": "Data protection",
+    "serviceCodeV2": { "serviceCode": "ebs", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Network Encryption",
+    "parent": "Encryption",
+    "category": "Data protection",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Personal Information Leak Detection",
+    "parent": "Privacy",
+    "category": "Data protection",
+    "serviceCodeV2": { "serviceCode": "macie2", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Personal Information De-identification",
+    "parent": "Privacy",
+    "category": "Data protection",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Personal Data Anonymization",
+    "parent": "Privacy",
+    "category": "Data protection",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Forgery Prevention",
+    "parent": "Integrity",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "Data Integrity Check",
+    "parent": "Integrity",
+    "category": "Data protection",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Server Security",
+    "parent": "Infrastructure Security",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Database Security",
+    "parent": "Infrastructure Security",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Network Security",
+    "parent": "Infrastructure Security",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Storage Security",
+    "parent": "Infrastructure Security",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": {
+      "serviceCode": "s3",
+      "subServiceCodes": [
+        "s3-accountpublicaccessblock",
+        "s3-bucket",
+        "s3-multiregionaccesspoint",
+        "s3-storagelens"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Application Security",
+    "parent": "Infrastructure Security",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": { "serviceCode": "inspector2", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Endpoint Security",
+    "parent": "Infrastructure Security",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "API Security",
+    "parent": "Infrastructure Security",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": {
+      "serviceCode": "iam",
+      "subServiceCodes": [
+        "iam-group",
+        "iam-policy",
+        "iam-role",
+        "iam-samlprovider",
+        "iam-servercertificate",
+        "iam-user"
+      ]
+    }
+  },
+  {
+    "securityTerm": "IaC Security",
+    "parent": "Infrastructure Security",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": {
+      "serviceCode": "secretsmanager",
+      "subServiceCodes": ["secretsmanager-secret"]
+    }
+  },
+  {
+    "securityTerm": "Source Code Security",
+    "parent": "Infrastructure Security",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": {
+      "serviceCode": "codeartifact",
+      "subServiceCodes": ["codeartifact-repository"]
+    }
+  },
+  {
+    "securityTerm": "Network Segmentation",
+    "parent": "Network Security",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Block Storage Security",
+    "parent": "Storage Security",
+    "category": "Data Protection",
+    "serviceCodeV2": { "serviceCode": "ebs", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Object Storage Security",
+    "parent": "Storage Security",
+    "category": "Data Protection",
+    "serviceCodeV2": {
+      "serviceCode": "s3",
+      "subServiceCodes": [
+        "s3-accountpublicaccessblock",
+        "s3-bucket",
+        "s3-multiregionaccesspoint",
+        "s3-storagelens"
+      ]
+    }
+  },
+  {
+    "securityTerm": "File Systems Security",
+    "parent": "Storage Security",
+    "category": "Data Protection",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Anti-DDos,DDos Prevention",
+    "parent": "Security Solutions",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": {
+      "serviceCode": "shield",
+      "subServiceCodes": ["shield-protection", "shieldregional-protection"]
+    }
+  },
+  {
+    "securityTerm": "Firewall,Network Firewall",
+    "parent": "Security Solutions",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": {
+      "serviceCode": "network-firewall",
+      "subServiceCodes": [
+        "networkfirewall-firewall",
+        "networkfirewall-firewallpolicy",
+        "networkfirewall-rulegroup",
+        "networkfirewall-tlsinspectionconfiguration"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Web Firewall,WAF",
+    "parent": "Security Solutions",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": {
+      "serviceCode": "waf",
+      "subServiceCodes": [
+        "waf-ratebasedrule",
+        "waf-rule",
+        "waf-rulegroup",
+        "waf-webacl"
+      ]
+    }
+  },
+  {
+    "securityTerm": "VPN",
+    "parent": "Security Solutions",
+    "category": "Data protection",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Intrusion Prevention,IPS",
+    "parent": "Security Solutions",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": {
+      "serviceCode": "shield",
+      "subServiceCodes": ["shield-protection", "shieldregional-protection"]
+    }
+  },
+  {
+    "securityTerm": "Intrusion Dectection,IDS",
+    "parent": "Security Solutions",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": {
+      "serviceCode": "shield",
+      "subServiceCodes": ["shield-protection", "shieldregional-protection"]
+    }
+  },
+  {
+    "securityTerm": "Data Breach",
+    "parent": "Data Protection",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "s3",
+      "subServiceCodes": [
+        "s3-accountpublicaccessblock",
+        "s3-bucket",
+        "s3-multiregionaccesspoint",
+        "s3-storagelens"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Data Classification",
+    "parent": "Data Protection",
+    "category": "Data protection",
+    "serviceCodeV2": { "serviceCode": "macie2", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Data Encryption",
+    "parent": "Data Protection",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "s3",
+      "subServiceCodes": [
+        "s3-accountpublicaccessblock",
+        "s3-bucket",
+        "s3-multiregionaccesspoint",
+        "s3-storagelens"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Data Loss Prevention",
+    "parent": "Data Protection",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "s3",
+      "subServiceCodes": [
+        "s3-accountpublicaccessblock",
+        "s3-bucket",
+        "s3-multiregionaccesspoint",
+        "s3-storagelens"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Data Access Control",
+    "parent": "Data Protection",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "s3",
+      "subServiceCodes": [
+        "s3-accountpublicaccessblock",
+        "s3-bucket",
+        "s3-multiregionaccesspoint",
+        "s3-storagelens"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Identity,Identity Management",
+    "parent": "IAM,Identity & Access Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "account", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "User Management",
+    "parent": "Identity,Identity Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "account", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Admin User Management",
+    "parent": "User Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "account", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Account Management",
+    "parent": "Identity,Identity Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "account", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "User Account Management",
+    "parent": "Account Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "account", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "System Account Management",
+    "parent": "Account Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Admin Account Management",
+    "parent": "Account Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "account", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Password",
+    "parent": "Authentication",
+    "category": "Identity & access management",
+    "serviceCodeV2": {
+      "serviceCode": "iam",
+      "subServiceCodes": [
+        "iam-group",
+        "iam-policy",
+        "iam-role",
+        "iam-samlprovider",
+        "iam-servercertificate",
+        "iam-user"
+      ]
+    }
+  },
+  {
+    "securityTerm": "OTP,MFA,2 Factor Authentication",
+    "parent": "Authentication",
+    "category": "Identity & access management",
+    "serviceCodeV2": {
+      "serviceCode": "iam",
+      "subServiceCodes": [
+        "iam-group",
+        "iam-policy",
+        "iam-role",
+        "iam-samlprovider",
+        "iam-servercertificate",
+        "iam-user"
+      ]
+    }
+  },
+  {
+    "securityTerm": "SSO,Single Sign-On",
+    "parent": "Authentication",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "sso", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Access Control,Access Management",
+    "parent": "IAM,Identity & Access Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": {
+      "serviceCode": "iam",
+      "subServiceCodes": [
+        "iam-group",
+        "iam-policy",
+        "iam-role",
+        "iam-samlprovider",
+        "iam-servercertificate",
+        "iam-user"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Server Access Control",
+    "parent": "Access Control,Access Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Database Access Control",
+    "parent": "Access Control,Access Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Storage Access Control",
+    "parent": "Access Control,Access Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": {
+      "serviceCode": "s3",
+      "subServiceCodes": [
+        "s3-accountpublicaccessblock",
+        "s3-bucket",
+        "s3-multiregionaccesspoint",
+        "s3-storagelens"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Network Access Control",
+    "parent": "Access Control,Access Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Cloud Console Access Control",
+    "parent": "Access Control,Access Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Application Access Control",
+    "parent": "Access Control,Access Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Remote Access Control",
+    "parent": "Access Control,Access Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "SSH RDP Access Control",
+    "parent": "Access Control,Access Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Internet Access Control",
+    "parent": "Access Control,Access Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "PAM,Privilege Access Management",
+    "parent": "",
+    "category": "Identity & access management",
+    "serviceCodeV2": {
+      "serviceCode": "iam",
+      "subServiceCodes": [
+        "iam-group",
+        "iam-policy",
+        "iam-role",
+        "iam-samlprovider",
+        "iam-servercertificate",
+        "iam-user"
+      ]
+    }
+  },
+  {
+    "securityTerm": "RBAC,Role-Based Access Control",
+    "parent": "",
+    "category": "Identity & access management",
+    "serviceCodeV2": {
+      "serviceCode": "iam",
+      "subServiceCodes": [
+        "iam-group",
+        "iam-policy",
+        "iam-role",
+        "iam-samlprovider",
+        "iam-servercertificate",
+        "iam-user"
+      ]
+    }
+  },
+  {
+    "securityTerm": "User Policy",
+    "parent": "Policy, Policy Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": {
+      "serviceCode": "iam",
+      "subServiceCodes": [
+        "iam-group",
+        "iam-policy",
+        "iam-role",
+        "iam-samlprovider",
+        "iam-servercertificate",
+        "iam-user"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Password Policy",
+    "parent": "Policy, Policy Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": {
+      "serviceCode": "iam",
+      "subServiceCodes": [
+        "iam-group",
+        "iam-policy",
+        "iam-role",
+        "iam-samlprovider",
+        "iam-servercertificate",
+        "iam-user"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Access Policy",
+    "parent": "Policy, Policy Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": {
+      "serviceCode": "iam",
+      "subServiceCodes": [
+        "iam-group",
+        "iam-policy",
+        "iam-role",
+        "iam-samlprovider",
+        "iam-servercertificate",
+        "iam-user"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Encryption Policy",
+    "parent": "Policy, Policy Management",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "kms",
+      "subServiceCodes": ["kms-alias", "kms-key"]
+    }
+  },
+  {
+    "securityTerm": "Privilege Policy",
+    "parent": "Policy, Policy Management",
+    "category": "Identity & access management",
+    "serviceCodeV2": {
+      "serviceCode": "iam",
+      "subServiceCodes": [
+        "iam-group",
+        "iam-policy",
+        "iam-role",
+        "iam-samlprovider",
+        "iam-servercertificate",
+        "iam-user"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Backup Policy",
+    "parent": "Policy, Policy Management",
+    "category": "Incident response",
+    "serviceCodeV2": {
+      "serviceCode": "backup",
+      "subServiceCodes": [
+        "backup-backupplan",
+        "backup-backupselection",
+        "backup-backupvault",
+        "backup-recoverypoint",
+        "backup-reportplan"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Privacy Policy",
+    "parent": "Policy, Policy Management",
+    "category": "Data protection",
+    "serviceCodeV2": { "serviceCode": "macie2", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Compute Resources Management",
+    "parent": "Resource Management,Assets Management",
+    "category": "Incident response",
+    "serviceCodeV2": {
+      "serviceCode": "monitoring",
+      "subServiceCodes": ["cloudwatch-alarm", "cloudwatch-metricstream"]
+    }
+  },
+  {
+    "securityTerm": "Network Resources Management",
+    "parent": "Resource Management,Assets Management",
+    "category": "Incident response",
+    "serviceCodeV2": {
+      "serviceCode": "monitoring",
+      "subServiceCodes": ["cloudwatch-alarm", "cloudwatch-metricstream"]
+    }
+  },
+  {
+    "securityTerm": "Security Resources Management",
+    "parent": "Resource Management,Assets Management",
+    "category": "Incident response",
+    "serviceCodeV2": {
+      "serviceCode": "monitoring",
+      "subServiceCodes": ["cloudwatch-alarm", "cloudwatch-metricstream"]
+    }
+  },
+  {
+    "securityTerm": "Database Resources Management",
+    "parent": "Resource Management,Assets Management",
+    "category": "Incident response",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Application Resources Management",
+    "parent": "Resource Management,Assets Management",
+    "category": "Incident response",
+    "serviceCodeV2": {
+      "serviceCode": "ssm",
+      "subServiceCodes": [
+        "ssm-associationcompliance",
+        "ssm-filedata",
+        "ssm-managedinstanceinventory",
+        "ssm-patchcompliance"
+      ]
+    }
+  },
+  {
+    "securityTerm": "License Resources Management",
+    "parent": "Resource Management,Assets Management",
+    "category": "Incident response",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Cloud Resources Management",
+    "parent": "Resource Management,Assets Management",
+    "category": "Incident response",
+    "serviceCodeV2": {
+      "serviceCode": "monitoring",
+      "subServiceCodes": ["cloudwatch-alarm", "cloudwatch-metricstream"]
+    }
+  },
+  {
+    "securityTerm": "Access Key Management",
+    "parent": "Key Resources,Key Management",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "kms",
+      "subServiceCodes": ["kms-alias", "kms-key"]
+    }
+  },
+  {
+    "securityTerm": "Encryption Key Management",
+    "parent": "Key Resources,Key Management",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "kms",
+      "subServiceCodes": ["kms-alias", "kms-key"]
+    }
+  },
+  {
+    "securityTerm": "Certificate Management System",
+    "parent": "Certificate Resources,Certificate,Certificate Management",
+    "category": "Data protection",
+    "serviceCodeV2": {
+      "serviceCode": "acm",
+      "subServiceCodes": ["acm-certificate"]
+    }
+  },
+  {
+    "securityTerm": "Certificate Authority (CA)",
+    "parent": "Certificate Resources,Certificate,Certificate Management",
+    "category": "Data protection",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Event Monitoring",
+    "parent": "Monitoring,Detection",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "monitoring",
+      "subServiceCodes": ["cloudwatch-alarm", "cloudwatch-metricstream"]
+    }
+  },
+  {
+    "securityTerm": "Anomaly Detection",
+    "parent": "Monitoring,Detection",
+    "category": "Detection",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Malware Detection",
+    "parent": "Monitoring,Detection",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "guardduty",
+      "subServiceCodes": ["guardduty-detector", "guardduty-filter"]
+    }
+  },
+  {
+    "securityTerm": "Threat Detection",
+    "parent": "Monitoring,Detection",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "guardduty",
+      "subServiceCodes": ["guardduty-detector", "guardduty-filter"]
+    }
+  },
+  {
+    "securityTerm": "Network Monitoring",
+    "parent": "Monitoring,Detection",
+    "category": "Detection",
+    "serviceCodeV2": { "serviceCode": "vpc", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Access Monitoring",
+    "parent": "Monitoring,Detection",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "Detection of Misuse of Resources",
+    "parent": "Monitoring,Detection",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "Access Log Management",
+    "parent": "Logging,Log Managemnt",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "API Log Management",
+    "parent": "Logging,Log Managemnt",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "Security Log Management",
+    "parent": "Logging,Log Managemnt",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "Audit Log Management",
+    "parent": "Logging,Log Managemnt",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "Security Assessment",
+    "parent": "",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "Compliance Audit",
+    "parent": "",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "Log Audit",
+    "parent": "",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "Business Continuity Audit",
+    "parent": "Audit",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "cloudtrail",
+      "subServiceCodes": ["cloudtrail-trail"]
+    }
+  },
+  {
+    "securityTerm": "Incident Preparation",
+    "parent": "Incident Response",
+    "category": "Incident response",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Incident Detection",
+    "parent": "Incident Response",
+    "category": "Incident response",
+    "serviceCodeV2": { "serviceCode": "inspector2", "subServiceCodes": [] }
+  },
+  {
+    "securityTerm": "Incident Notification",
+    "parent": "Incident Response",
+    "category": "Incident response",
+    "serviceCodeV2": { "serviceCode": "sns", "subServiceCodes": ["sns-topic"] }
+  },
+  {
+    "securityTerm": "Incident Recovery",
+    "parent": "Incident Response",
+    "category": "Incident response",
+    "serviceCodeV2": []
+  },
+  {
+    "securityTerm": "Resource Configuration Management",
+    "parent": "Configuration Management",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "config",
+      "subServiceCodes": [
+        "config-configurationrecorder",
+        "config-conformancepackcompliance",
+        "config-resourcecompliance"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Policy Configuration Management",
+    "parent": "Configuration Management",
+    "category": "Detection",
+    "serviceCodeV2": {
+      "serviceCode": "config",
+      "subServiceCodes": [
+        "config-configurationrecorder",
+        "config-conformancepackcompliance",
+        "config-resourcecompliance"
+      ]
+    }
+  },
+  {
+    "securityTerm": "OS Patch Management",
+    "parent": "Patch Management",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": {
+      "serviceCode": "ssm",
+      "subServiceCodes": [
+        "ssm-associationcompliance",
+        "ssm-filedata",
+        "ssm-managedinstanceinventory",
+        "ssm-patchcompliance"
+      ]
+    }
+  },
+  {
+    "securityTerm": "Application Patch Management",
+    "parent": "Patch Management",
+    "category": "Infrastructure protection",
+    "serviceCodeV2": {
+      "serviceCode": "ssm",
+      "subServiceCodes": [
+        "ssm-associationcompliance",
+        "ssm-filedata",
+        "ssm-managedinstanceinventory",
+        "ssm-patchcompliance"
+      ]
+    }
+  }
+]

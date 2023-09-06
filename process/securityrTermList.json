@@ -1,0 +1,842 @@
+[
+  {
+    "": "",
+    "Security Terms": "Availability",
+    "High level Terms": "Business Continuity",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Confidentiality",
+    "High level Terms": "Business Continuity",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Integrity",
+    "High level Terms": "Business Continuity",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "integritycheck-cloudtrail",
+    "AWS Service Code V2": "cloudtrail"
+  },
+  {
+    "": "",
+    "Security Terms": "High Availability,HA",
+    "High level Terms": "Availability",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "az,vpc",
+    "AWS Service Code V2": "vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Disaster Recovery,DR",
+    "High level Terms": "Availability",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "az,vpc",
+    "AWS Service Code V2": "vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Backup",
+    "High level Terms": "Availability",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "backup",
+    "AWS Service Code V2": "backup"
+  },
+  {
+    "": "",
+    "Security Terms": "Instance Backup",
+    "High level Terms": "Backup",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "backup-instance",
+    "AWS Service Code V2": "backup"
+  },
+  {
+    "": "",
+    "Security Terms": "Database Backup",
+    "High level Terms": "Backup",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "backup-rds",
+    "AWS Service Code V2": "backup, rds"
+  },
+  {
+    "": "",
+    "Security Terms": "Storage Backup",
+    "High level Terms": "Backup",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "backup-s3",
+    "AWS Service Code V2": "backup, s3"
+  },
+  {
+    "": "",
+    "Security Terms": "Network Backup",
+    "High level Terms": "Backup",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "backup-vpc",
+    "AWS Service Code V2": "backup, vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Database Encryption",
+    "High level Terms": "Encryption",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "encryption-rds",
+    "AWS Service Code V2": "rds"
+  },
+  {
+    "": "",
+    "Security Terms": "Storage Encryption",
+    "High level Terms": "Encryption",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "encryption-ebs,encryption-s3",
+    "AWS Service Code V2": "ebs, s3"
+  },
+  {
+    "": "",
+    "Security Terms": "Network Encryption",
+    "High level Terms": "Encryption",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "vpn",
+    "AWS Service Code V2": "vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Personal Information Leak Detection",
+    "High level Terms": "Privacy",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "macie2",
+    "AWS Service Code V2": "macie2"
+  },
+  {
+    "": "",
+    "Security Terms": "Personal Information De-identification",
+    "High level Terms": "Privacy",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Personal Data Anonymization",
+    "High level Terms": "Privacy",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Forgery Prevention",
+    "High level Terms": "Integrity",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "integritycheck-cloudtrail",
+    "AWS Service Code V2": "cloudtrail"
+  },
+  {
+    "": "",
+    "Security Terms": "Data Integrity Check",
+    "High level Terms": "Integrity",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Server Security",
+    "High level Terms": "Infrastructure Security",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "securitygroup",
+    "AWS Service Code V2": "vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Database Security",
+    "High level Terms": "Infrastructure Security",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "securitygroup",
+    "AWS Service Code V2": "vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Network Security",
+    "High level Terms": "Infrastructure Security",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "vpc,nacl,network-firewall,waf,wafv2,shield,vpn,fms,securitygorup,vpc",
+    "AWS Service Code V2": "vpc, waf, wafv2, shield, fms, network-firewall"
+  },
+  {
+    "": "",
+    "Security Terms": "Storage Security",
+    "High level Terms": "Infrastructure Security",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "encryption-s3,blockpublicaccess-s3,accesscontrol-s3,lockobject-s3,mfadelete-s3",
+    "AWS Service Code V2": "s3"
+  },
+  {
+    "": "",
+    "Security Terms": "Application Security",
+    "High level Terms": "Infrastructure Security",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "inspector,cognito,monitoring",
+    "AWS Service Code V2": "inspector2, monitoring"
+  },
+  {
+    "": "",
+    "Security Terms": "Endpoint Security",
+    "High level Terms": "Infrastructure Security",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "API Security",
+    "High level Terms": "Infrastructure Security",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "sts,cloudtrail,waf,wafv2",
+    "AWS Service Code V2": "iam, cloudtrail, waf, wafv2"
+  },
+  {
+    "": "",
+    "Security Terms": "IaC Security",
+    "High level Terms": "Infrastructure Security",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "secretsmanager,stackpolicy-cloudformation",
+    "AWS Service Code V2": "secretsmanager, cloudformation"
+  },
+  {
+    "": "",
+    "Security Terms": "Source Code Security",
+    "High level Terms": "Infrastructure Security",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "codeartifact",
+    "AWS Service Code V2": "codeartifact"
+  },
+  {
+    "": "",
+    "Security Terms": "Network Segmentation",
+    "High level Terms": "Network Security",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "vpc",
+    "AWS Service Code V2": "vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Block Storage Security",
+    "High level Terms": "Storage Security",
+    "AWS Security Category": "Data Protection",
+    "AWS Service Code": "encryption-ebs",
+    "AWS Service Code V2": "ebs"
+  },
+  {
+    "": "",
+    "Security Terms": "Object Storage Security",
+    "High level Terms": "Storage Security",
+    "AWS Security Category": "Data Protection",
+    "AWS Service Code": "encryption-s3,blockpublicaccess-s3,accesscontrol-s3,lockobject-s3,mfadelete-s3",
+    "AWS Service Code V2": "s3"
+  },
+  {
+    "": "",
+    "Security Terms": "File Systems Security",
+    "High level Terms": "Storage Security",
+    "AWS Security Category": "Data Protection",
+    "AWS Service Code": "encryption-efs",
+    "AWS Service Code V2": "efs"
+  },
+  {
+    "": "",
+    "Security Terms": "Anti-DDos,DDos Prevention",
+    "High level Terms": "Security Solutions",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "shield",
+    "AWS Service Code V2": "shield"
+  },
+  {
+    "": "",
+    "Security Terms": "Firewall,Network Firewall",
+    "High level Terms": "Security Solutions",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "nacl,network-firewall",
+    "AWS Service Code V2": "network-firewall"
+  },
+  {
+    "": "",
+    "Security Terms": "Web Firewall,WAF",
+    "High level Terms": "Security Solutions",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "waf,wafv2",
+    "AWS Service Code V2": "waf,wafv2"
+  },
+  {
+    "": "",
+    "Security Terms": "VPN",
+    "High level Terms": "Security Solutions",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "vpn",
+    "AWS Service Code V2": "vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Intrusion Prevention,IPS",
+    "High level Terms": "Security Solutions",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "shield",
+    "AWS Service Code V2": "shield"
+  },
+  {
+    "": "",
+    "Security Terms": "Intrusion Dectection,IDS",
+    "High level Terms": "Security Solutions",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "shield",
+    "AWS Service Code V2": "shield"
+  },
+  {
+    "": "",
+    "Security Terms": "Data Breach",
+    "High level Terms": "Data Protection",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "blockpublicaccess-s3",
+    "AWS Service Code V2": "s3"
+  },
+  {
+    "": "",
+    "Security Terms": "Data Classification",
+    "High level Terms": "Data Protection",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "macie2",
+    "AWS Service Code V2": "macie2"
+  },
+  {
+    "": "",
+    "Security Terms": "Data Encryption",
+    "High level Terms": "Data Protection",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "encryption-ebs,encryption-rds,encryption-efs,encryption-s3",
+    "AWS Service Code V2": "s3, rds, efs"
+  },
+  {
+    "": "",
+    "Security Terms": "Data Loss Prevention",
+    "High level Terms": "Data Protection",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "lockobject-s3,mfadelete-s3",
+    "AWS Service Code V2": "s3"
+  },
+  {
+    "": "",
+    "Security Terms": "Data Access Control",
+    "High level Terms": "Data Protection",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "blockpublicaccess-s3",
+    "AWS Service Code V2": "s3"
+  },
+  {
+    "": "",
+    "Security Terms": "Identity,Identity Management",
+    "High level Terms": "IAM,Identity & Access Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "account,ds,iam,cognito",
+    "AWS Service Code V2": "account,ds,iam,cognito"
+  },
+  {
+    "": "",
+    "Security Terms": "User Management",
+    "High level Terms": "Identity,Identity Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "account,ds,iam,cognito",
+    "AWS Service Code V2": "account,ds,iam,cognito"
+  },
+  {
+    "": "",
+    "Security Terms": "Admin User Management",
+    "High level Terms": "User Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "account,ds,iam,mfa",
+    "AWS Service Code V2": "account,ds,iam,mfa"
+  },
+  {
+    "": "",
+    "Security Terms": "Account Management",
+    "High level Terms": "Identity,Identity Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "account,ds,federation,iam,cognito",
+    "AWS Service Code V2": "account,ds,sso,iam,cognito"
+  },
+  {
+    "": "",
+    "Security Terms": "User Account Management",
+    "High level Terms": "Account Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "account,ds,federation,iam,cognito",
+    "AWS Service Code V2": "account,ds,sso,iam,cognito"
+  },
+  {
+    "": "",
+    "Security Terms": "System Account Management",
+    "High level Terms": "Account Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Admin Account Management",
+    "High level Terms": "Account Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "account,ds,iam,mfa",
+    "AWS Service Code V2": "account,ds,iam"
+  },
+  {
+    "": "",
+    "Security Terms": "Password",
+    "High level Terms": "Authentication",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "iam",
+    "AWS Service Code V2": "iam"
+  },
+  {
+    "": "",
+    "Security Terms": "OTP,MFA,2 Factor Authentication",
+    "High level Terms": "Authentication",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "iam,mfa",
+    "AWS Service Code V2": "iam"
+  },
+  {
+    "": "",
+    "Security Terms": "SSO,Single Sign-On",
+    "High level Terms": "Authentication",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "sso",
+    "AWS Service Code V2": "sso"
+  },
+  {
+    "": "",
+    "Security Terms": "Access Control,Access Management",
+    "High level Terms": "IAM,Identity & Access Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "iam",
+    "AWS Service Code V2": "iam"
+  },
+  {
+    "": "",
+    "Security Terms": "Server Access Control",
+    "High level Terms": "Access Control,Access Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "securitygroup",
+    "AWS Service Code V2": "vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Database Access Control",
+    "High level Terms": "Access Control,Access Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "securitygroup",
+    "AWS Service Code V2": "vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Storage Access Control",
+    "High level Terms": "Access Control,Access Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "blockpublicaccess-s3",
+    "AWS Service Code V2": "s3"
+  },
+  {
+    "": "",
+    "Security Terms": "Network Access Control",
+    "High level Terms": "Access Control,Access Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "securitygroup,nacl,network-firewall,waf2",
+    "AWS Service Code V2": "vpc, network-firewall, wafv2"
+  },
+  {
+    "": "",
+    "Security Terms": "Cloud Console Access Control",
+    "High level Terms": "Access Control,Access Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Application Access Control",
+    "High level Terms": "Access Control,Access Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Remote Access Control",
+    "High level Terms": "Access Control,Access Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "SSH RDP Access Control",
+    "High level Terms": "Access Control,Access Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "securitygroup",
+    "AWS Service Code V2": "vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Internet Access Control",
+    "High level Terms": "Access Control,Access Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "nacl,network-firewall,waf2,blockpublicaccess-s3",
+    "AWS Service Code V2": "vpc, network-firewall, wafv2, s3"
+  },
+  {
+    "": "",
+    "Security Terms": "PAM,Privilege Access Management",
+    "High level Terms": "",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "iam,cognito,access-analyzer",
+    "AWS Service Code V2": "iam,cognito,access-analyzer"
+  },
+  {
+    "": "",
+    "Security Terms": "RBAC,Role-Based Access Control",
+    "High level Terms": "",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "iam,cognito,access-analyzer",
+    "AWS Service Code V2": "iam,cognito,access-analyzer"
+  },
+  {
+    "": "",
+    "Security Terms": "User Policy",
+    "High level Terms": "Policy, Policy Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "iam",
+    "AWS Service Code V2": "iam"
+  },
+  {
+    "": "",
+    "Security Terms": "Password Policy",
+    "High level Terms": "Policy, Policy Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "iam",
+    "AWS Service Code V2": "iam"
+  },
+  {
+    "": "",
+    "Security Terms": "Access Policy",
+    "High level Terms": "Policy, Policy Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "iam",
+    "AWS Service Code V2": "iam"
+  },
+  {
+    "": "",
+    "Security Terms": "Encryption Policy",
+    "High level Terms": "Policy, Policy Management",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "kms,acm,secretsmanager",
+    "AWS Service Code V2": "kms,acm,secretsmanager"
+  },
+  {
+    "": "",
+    "Security Terms": "Privilege Policy",
+    "High level Terms": "Policy, Policy Management",
+    "AWS Security Category": "Identity & access management",
+    "AWS Service Code": "iam,access-analyzer",
+    "AWS Service Code V2": "iam,access-analyzer"
+  },
+  {
+    "": "",
+    "Security Terms": "Backup Policy",
+    "High level Terms": "Policy, Policy Management",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "backup",
+    "AWS Service Code V2": "backup"
+  },
+  {
+    "": "",
+    "Security Terms": "Privacy Policy",
+    "High level Terms": "Policy, Policy Management",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "macie2",
+    "AWS Service Code V2": "macie2"
+  },
+  {
+    "": "",
+    "Security Terms": "Compute Resources Management",
+    "High level Terms": "Resource Management,Assets Management",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "monitoring,config,ssm",
+    "AWS Service Code V2": "monitoring,config,ssm"
+  },
+  {
+    "": "",
+    "Security Terms": "Network Resources Management",
+    "High level Terms": "Resource Management,Assets Management",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "monitoring,config",
+    "AWS Service Code V2": "monitoring,config"
+  },
+  {
+    "": "",
+    "Security Terms": "Security Resources Management",
+    "High level Terms": "Resource Management,Assets Management",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "monitoring,config",
+    "AWS Service Code V2": "monitoring,config"
+  },
+  {
+    "": "",
+    "Security Terms": "Database Resources Management",
+    "High level Terms": "Resource Management,Assets Management",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Application Resources Management",
+    "High level Terms": "Resource Management,Assets Management",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "ssm",
+    "AWS Service Code V2": "ssm"
+  },
+  {
+    "": "",
+    "Security Terms": "License Resources Management",
+    "High level Terms": "Resource Management,Assets Management",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Cloud Resources Management",
+    "High level Terms": "Resource Management,Assets Management",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "monitoring,config",
+    "AWS Service Code V2": "monitoring,config"
+  },
+  {
+    "": "",
+    "Security Terms": "Access Key Management",
+    "High level Terms": "Key Resources,Key Management",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "kms,secretsmanager,cloudhsm",
+    "AWS Service Code V2": "kms,secretsmanager,cloudhsm"
+  },
+  {
+    "": "",
+    "Security Terms": "Encryption Key Management",
+    "High level Terms": "Key Resources,Key Management",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "kms,secretsmanager,cloudhsm",
+    "AWS Service Code V2": "kms,secretsmanager,cloudhsm"
+  },
+  {
+    "": "",
+    "Security Terms": "Certificate Management System",
+    "High level Terms": "Certificate Resources,Certificate,Certificate Management",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "acm",
+    "AWS Service Code V2": "acm"
+  },
+  {
+    "": "",
+    "Security Terms": "Certificate Authority (CA)",
+    "High level Terms": "Certificate Resources,Certificate,Certificate Management",
+    "AWS Security Category": "Data protection",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Event Monitoring",
+    "High level Terms": "Monitoring,Detection",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "monitoring,guardduty,events,cloudtrail",
+    "AWS Service Code V2": "monitoring,guardduty,events,cloudtrail"
+  },
+  {
+    "": "",
+    "Security Terms": "Anomaly Detection",
+    "High level Terms": "Monitoring,Detection",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "detective",
+    "AWS Service Code V2": "detective"
+  },
+  {
+    "": "",
+    "Security Terms": "Malware Detection",
+    "High level Terms": "Monitoring,Detection",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "guardduty,waf,waf2",
+    "AWS Service Code V2": "guardduty,waf,waf2"
+  },
+  {
+    "": "",
+    "Security Terms": "Threat Detection",
+    "High level Terms": "Monitoring,Detection",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "guardduty",
+    "AWS Service Code V2": "guardduty"
+  },
+  {
+    "": "",
+    "Security Terms": "Network Monitoring",
+    "High level Terms": "Monitoring,Detection",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "vpcflow",
+    "AWS Service Code V2": "vpc"
+  },
+  {
+    "": "",
+    "Security Terms": "Access Monitoring",
+    "High level Terms": "Monitoring,Detection",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "cloudtrail",
+    "AWS Service Code V2": "cloudtrail"
+  },
+  {
+    "": "",
+    "Security Terms": "Detection of Misuse of Resources",
+    "High level Terms": "Monitoring,Detection",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "cloudtrail",
+    "AWS Service Code V2": "cloudtrail"
+  },
+  {
+    "": "",
+    "Security Terms": "Access Log Management",
+    "High level Terms": "Logging,Log Managemnt",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "cloudtrail",
+    "AWS Service Code V2": "cloudtrail"
+  },
+  {
+    "": "",
+    "Security Terms": "API Log Management",
+    "High level Terms": "Logging,Log Managemnt",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "cloudtrail",
+    "AWS Service Code V2": "cloudtrail"
+  },
+  {
+    "": "",
+    "Security Terms": "Security Log Management",
+    "High level Terms": "Logging,Log Managemnt",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "cloudtrail",
+    "AWS Service Code V2": "cloudtrail"
+  },
+  {
+    "": "",
+    "Security Terms": "Audit Log Management",
+    "High level Terms": "Logging,Log Managemnt",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "cloudtrail",
+    "AWS Service Code V2": "cloudtrail"
+  },
+  {
+    "": "",
+    "Security Terms": "Security Assessment",
+    "High level Terms": "",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "cloudtrail,auditmanager,config,detective",
+    "AWS Service Code V2": "cloudtrail,auditmanager,config,detective"
+  },
+  {
+    "": "",
+    "Security Terms": "Compliance Audit",
+    "High level Terms": "",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "cloudtrail,auditmanager,config",
+    "AWS Service Code V2": "cloudtrail,auditmanager,config"
+  },
+  {
+    "": "",
+    "Security Terms": "Log Audit",
+    "High level Terms": "",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "cloudtrail",
+    "AWS Service Code V2": "cloudtrail"
+  },
+  {
+    "": "",
+    "Security Terms": "Business Continuity Audit",
+    "High level Terms": "Audit",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "cloudtrail,integritycheck-cloudtrail",
+    "AWS Service Code V2": "cloudtrail"
+  },
+  {
+    "": "",
+    "Security Terms": "Incident Preparation",
+    "High level Terms": "Incident Response",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Incident Detection",
+    "High level Terms": "Incident Response",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "inspect,detective",
+    "AWS Service Code V2": "inspector2, detective"
+  },
+  {
+    "": "",
+    "Security Terms": "Incident Notification",
+    "High level Terms": "Incident Response",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "sns",
+    "AWS Service Code V2": "sns"
+  },
+  {
+    "": "",
+    "Security Terms": "Incident Recovery",
+    "High level Terms": "Incident Response",
+    "AWS Security Category": "Incident response",
+    "AWS Service Code": "",
+    "AWS Service Code V2": ""
+  },
+  {
+    "": "",
+    "Security Terms": "Resource Configuration Management",
+    "High level Terms": "Configuration Management",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "config",
+    "AWS Service Code V2": "config"
+  },
+  {
+    "": "",
+    "Security Terms": "Policy Configuration Management",
+    "High level Terms": "Configuration Management",
+    "AWS Security Category": "Detection",
+    "AWS Service Code": "config,fms",
+    "AWS Service Code V2": "config,fms"
+  },
+  {
+    "": "",
+    "Security Terms": "OS Patch Management",
+    "High level Terms": "Patch Management",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "ssm",
+    "AWS Service Code V2": "ssm"
+  },
+  {
+    "": "",
+    "Security Terms": "Application Patch Management",
+    "High level Terms": "Patch Management",
+    "AWS Security Category": "Infrastructure protection",
+    "AWS Service Code": "ssm",
+    "AWS Service Code V2": "ssm"
+  }
+]
