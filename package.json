@@ -20,6 +20,7 @@
     "fuse.js": "^6.6.2",
     "http": "^0.0.1-security",
     "js-yaml": "^4.1.0",
+    "stopword": "^2.0.8",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
