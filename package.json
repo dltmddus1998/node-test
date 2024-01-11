@@ -15,6 +15,7 @@
     "body-parser": "^1.20.2",
     "config": "^3.3.9",
     "cors": "^2.8.5",
+    "d2lang-js": "^0.2.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "fuse.js": "^6.6.2",
@@ -27,6 +28,10 @@
     "@aws-sdk/client-config-service": "^3.362.0",
     "@aws-sdk/client-ec2": "^3.345.0",
     "@aws-sdk/client-iam": "^3.345.0",
-    "@aws-sdk/client-sts": "^3.345.0"
+    "@aws-sdk/client-sts": "^3.345.0",
+    "cheerio": "^1.0.0-rc.12",
+    "htmlparser2": "^9.1.0",
+    "jsdom": "^23.2.0",
+    "util": "^0.12.5"
   }
 }

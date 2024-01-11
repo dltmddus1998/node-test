@@ -1,3 +1,4 @@
 .env.*
 /node_modules
 /process
+node_modules

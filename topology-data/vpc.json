@@ -1,0 +1,18 @@
+{
+  "router": "Seoul-Peer-Router",
+  "myregion": "Seoul\\n(ap-northeast-2)",
+  "myregion.vpc1": "VPC-SeoulA\\n(10.11.0.0/8)",
+  "myregion.vpc2": "VPC-SeoulB\\n(10.12.0.0/8)",
+  "myregion.vpc3": "VPC-SeoulC\\n(10.13.0.0/8)",
+  "myregion.vpc4": "VPC-SeoulC\\n(10.14.0.0/8)",
+  "myregion.vpc5": "VPC-SeoulC\\n(10.15.0.0/8)",
+
+  "peerregion1": "Virginia\\n(ap-eastus-1)",
+  "peerregion2": "Singapore\\n(ap-northeast-1)",
+  "peerregion1.vpc1": "VPC-VirginiaA\\n(10.2.0.0/8)",
+  "peerregion1.vpc2": "VPC-VirginiaB\\n(10.3.0.0/8)",
+  "peerregion1.vpc3": "VPC-VirginiaC\\n(10.4.0.0/8)",
+  "peerregion2.vpc1": "VPC-SingaporeA\\n(10.22.0.0/8)",
+  "peerregion2.vpc2": "VPC-SingaporeB\\n(10.23.0.0/8)",
+  "peerregion2.vpc3": "VPC-SingaporeC\\n(10.24.0.0/8)"
+}
