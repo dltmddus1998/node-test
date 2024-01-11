@@ -73,7 +73,7 @@ app.get('/d2-cons', async (req, res) => {
       const svgFilePath = join(parentFolderPath, `${filename}-added-final.svg`);
       const svgContent = readFileSync(svgFilePath, 'utf-8');
 
-      // TODO: svgContent 분석해서 특정 구역에 n개 이상의 vpc가 있다면 show all hidden=false 상태로 전환.
+      // TODO: svgContent 분석해서 특정 구역에 n개 이상의 vpc가 있다면 show all hidden=false 상태로 전화... -> 이게 잘 안됨...>>
       if (svgContent.includes('box-row1.box5')) console.log('dfsafdsa');
 
       res.send(svgContent);
