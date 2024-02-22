@@ -33,21 +33,21 @@ app.get('/d2', async (req, res) => {
      * 2)
      */
 
-    const addLayerResult = addLayer(filename);
+    // const addLayerResult = addLayer(filename);
 
-    if (addLayerResult) {
-      await updateD2(filename);
-      await generateSVG(filename);
+    // if (addLayerResult) {
+    // await updateD2(filename);
+    // await generateSVG(filename);
 
-      const __dirname = resolve();
+    const __dirname = resolve();
 
-      const parentFolderPath = join(__dirname, './d2');
-      const svgFilePath = join(parentFolderPath, `${filename}.svg`);
-      const svgContent = readFileSync(svgFilePath, 'utf-8');
+    const parentFolderPath = join(__dirname, './d2');
+    // const svgFilePath = join(parentFolderPath, `${filename}.svg`);
+    const svgFilePath = join(parentFolderPath, `${filename}-temp.svg`);
+    const svgContent = readFileSync(svgFilePath, 'utf-8');
 
-      res.send(svgContent);
-      unlinkSync(svgFilePath);
-    }
+    res.send(svgContent);
+    // unlinkSync(svgFilePath);
   } catch (error) {
     console.error(error);
     res.status(500).send('Error in SVG generation');
@@ -74,7 +74,7 @@ app.get('/d2-cons', async (req, res) => {
       const svgContent = readFileSync(svgFilePath, 'utf-8');
 
       // TODO: svgContent 분석해서 특정 구역에 n개 이상의 vpc가 있다면 show all hidden=false 상태로 전화... -> 이게 잘 안됨...>>
-      if (svgContent.includes('box-row1.box5')) console.log('dfsafdsa');
+      // if (svgContent.includes('box-row1.box5')) console.log('dfsafdsa');
 
       res.send(svgContent);
       unlinkSync(svgFilePath);

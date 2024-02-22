@@ -1,7 +1,6 @@
 import fs, { readFileSync } from 'fs';
 import { join, resolve } from 'path';
 import { spawn } from 'child_process';
-import jsdom from 'jsdom';
 
 export const updateD2 = async (filename) => {
   let d2Data = readFileSync(`./d2/${filename}.d2`, 'utf-8');
