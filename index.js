@@ -41,19 +41,6 @@ const containsPartialWord = (inputString, targetWords) => {
   }
 };
 
-const updateD2 = async (filename) => {
-  let d2Data = readFileSync(`./d2/${filename}.d2`, 'utf-8');
-  const topologyData = fs.readFileSync('./topology-data/vpc.json');
-  const topology = JSON.parse(topologyData);
-
-  Object.keys(topology).forEach((variable) => {
-    const regex = new RegExp(`{{\\s*${variable}\\s*}}`, 'g');
-    d2Data = d2Data.replaceAll(regex, topology[variable]);
-  });
-
-  fs.writeFileSync(`./d2/${filename}.d2`, d2Data);
-};
-
 app.get('/sec-similar-matching2', async (req, res) => {
   const checkRuleNameList = fs.readFileSync('./process/awsCheckRuleNameList.json', 'utf-8');
   const securityTermList = fs.readFileSync('./process/mappedSecurityTermList.json', 'utf-8');
